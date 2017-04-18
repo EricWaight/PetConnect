@@ -13,7 +13,7 @@ namespace PetConnect.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201704181442309_Initial"; }
+            get { return "201704181531311_Initial"; }
         }
         
         string IMigrationMetadata.Source

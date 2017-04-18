@@ -9,9 +9,9 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace PetConnect.DAL
 {
-    public class ApplicationDBContext : DbContext
+    public class PetConnectDBContext : DbContext
     {
-        public MyDBContext() : base ("PetConnectContext")
+        public PetConnectDBContext() : base ("PetConnectDBContext")
         {
         }
 

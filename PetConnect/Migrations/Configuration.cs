@@ -5,14 +5,14 @@ namespace PetConnect.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<PetConnect.DAL.ApplicationDBContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<PetConnect.DAL.PetConnectDBContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(PetConnect.DAL.ApplicationDBContext context)
+        protected override void Seed(PetConnect.DAL.PetConnectDBContext context)
         {
             //  This method will be called after migrating to the latest version.
 
