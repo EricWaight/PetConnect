@@ -17,5 +17,7 @@ namespace PetConnect.DAL
 
         public DbSet<User> Users { get; set; }
         public DbSet<Chirps> Chirps { get; set; }
+        public DbSet<UserFriends> UserFriends { get; set; }
+
     }
 }

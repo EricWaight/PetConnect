@@ -128,8 +128,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ChirpsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UserFriendsController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="DAL\PetConnectDBContext.cs" />
+    <Compile Include="DAL\PetInitializer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -137,9 +141,22 @@
     <Compile Include="Migrations\201704181531311_Initial.Designer.cs">
       <DependentUpon>201704181531311_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201704181640499_AddedFriendAssoc.cs" />
+    <Compile Include="Migrations\201704181640499_AddedFriendAssoc.Designer.cs">
+      <DependentUpon>201704181640499_AddedFriendAssoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704181725150_AddedSeedData.cs" />
+    <Compile Include="Migrations\201704181725150_AddedSeedData.Designer.cs">
+      <DependentUpon>201704181725150_AddedSeedData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704191459342_Setup.cs" />
+    <Compile Include="Migrations\201704191459342_Setup.Designer.cs">
+      <DependentUpon>201704191459342_Setup.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Chirps.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Models\UserFriends.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -177,6 +194,21 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Users\Create.cshtml" />
+    <Content Include="Views\Users\Delete.cshtml" />
+    <Content Include="Views\Users\Details.cshtml" />
+    <Content Include="Views\Users\Edit.cshtml" />
+    <Content Include="Views\Users\Index.cshtml" />
+    <Content Include="Views\UserFriends\Create.cshtml" />
+    <Content Include="Views\UserFriends\Delete.cshtml" />
+    <Content Include="Views\UserFriends\Details.cshtml" />
+    <Content Include="Views\UserFriends\Edit.cshtml" />
+    <Content Include="Views\UserFriends\Index.cshtml" />
+    <Content Include="Views\Chirps\Create.cshtml" />
+    <Content Include="Views\Chirps\Delete.cshtml" />
+    <Content Include="Views\Chirps\Details.cshtml" />
+    <Content Include="Views\Chirps\Edit.cshtml" />
+    <Content Include="Views\Chirps\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -193,6 +225,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201704181531311_Initial.resx">
       <DependentUpon>201704181531311_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704181640499_AddedFriendAssoc.resx">
+      <DependentUpon>201704181640499_AddedFriendAssoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704181725150_AddedSeedData.resx">
+      <DependentUpon>201704181725150_AddedSeedData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704191459342_Setup.resx">
+      <DependentUpon>201704191459342_Setup.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

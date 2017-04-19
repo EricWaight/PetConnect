@@ -1,5 +1,6 @@
 namespace PetConnect.Migrations
 {
+    using Models;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -12,7 +13,7 @@ namespace PetConnect.Migrations
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(PetConnect.DAL.PetConnectDBContext context)
+        protected override void Seed(DAL.PetConnectDBContext context)
         {
             //  This method will be called after migrating to the latest version.
 
