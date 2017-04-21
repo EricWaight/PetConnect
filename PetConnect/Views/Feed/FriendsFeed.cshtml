@@ -1,0 +1,17 @@
+﻿@model ICollection <PetConnect.Models.Chirps>
+
+@{
+    ViewBag.Title = "Feed";
+}
+
+<h2>Friends Feed</h2>
+
+<ul>
+    @foreach (var chirp in Model)
+    {
+        <li>@chirp.Text - @chirp.CreateDateTime - By @chirp.User.NickName</li>
+    }
+</ul>
+
+
+

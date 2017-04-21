@@ -20,7 +20,7 @@ namespace PetConnect.Models
         public string ProfilePicUrl { get; set; }
         public Species? Species { get; set; }
 
-        public List<Chirps> Chirps { get; set; }
-        public ICollection<UserFriends> Friends { get; set; }
+        public virtual ICollection<Chirps> Chirps { get; set; }
+        public virtual ICollection<UserFriends> Friends { get; set; }
     }
 }

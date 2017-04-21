@@ -1,0 +1,30 @@
+﻿@model  PetConnect.Models.User
+
+@{
+    ViewBag.Title = "View Profile";
+}
+
+<h2>@Model.NickName</h2>
+
+<ul>
+    <li>@Model.Species</li>
+    <li>@Model.UserName</li>
+
+</ul>
+
+<form action="/Profile/AddChirp" method="get">
+    <input type="text" name="Text" />
+    <input type="hidden" name="UserId" value="@Model.Id" />
+    <button type="submit">Post Chirp</button>
+</form>
+
+<h3>Chirps</h3>
+
+<ul>
+    @foreach (var chirp in Model.Chirps)
+    {
+        <li>@chirp.Text - @chirp.CreateDateTime</li>
+    }
+
+</ul>
+
